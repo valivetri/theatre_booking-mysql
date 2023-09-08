@@ -1,0 +1,21 @@
+# Pasting this code in sql(in phpMyAdmin) creates a new database
+
+CREATE TABLE bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    movie VARCHAR(255) NOT NULL,
+    row INT NOT NULL,
+    seat INT NOT NULL,
+    amount_paid INT NOT NULL
+);
+
+# FOR EXTRA PURPOSE. USE IF YOU WANT ELSE AVOID!
+
+# Delete the values in the database table and put this in sql(phpMyAdmin) to start new values from ID 1
+ALTER TABLE your_table_name AUTO_INCREMENT = 1;
+
+
+# To delete all values in the database table and start new value from ID 1 by default. Put this in sql(phpMyAdmin)
+TRUNCATE TABLE your_table_name;
+
+
